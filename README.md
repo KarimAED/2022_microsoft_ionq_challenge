@@ -1,4 +1,4 @@
-# Welcome to the quantum gaming world of QHackJack!
+# Welcome to the quantum gaming world of QuHackJack!
 
 <p align="left">
   <a href="https://azure.microsoft.com/en-us/solutions/quantum-computing/" target="_blank"><img src="https://user-images.githubusercontent.com/10100490/151488491-609828a4-cd1f-4076-b5b2-a8d9fc2d0fa4.png" width="30%"/> </a>
@@ -31,7 +31,9 @@ q_4	q_3	q_2	q_1	q_0
 So, if we want to get our 7, we know that we want a bit string like 100xx where x denotes the suit bits, which don’t matter to win the game. To get this, we need to reach the following states in the qubits:
 
 q_2	|0>
+
 q_3	|0>
+
 q_4	|1>
 
 Now, the initial circuit looks like
