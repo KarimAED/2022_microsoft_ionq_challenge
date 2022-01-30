@@ -1,4 +1,5 @@
 # QuHackJack Casinos™
+  <a href="" target="_blank"><img src="https://user-images.githubusercontent.com/46804607/151706840-778c7238-9dac-4062-a6ab-a909ae9606c4.png" width="60%"/> </a>
 Cheating with Quantum Computers since 2022
 
 ### The Team
@@ -38,11 +39,7 @@ __Introducing: QuHackJack__
 - Each card corresponds to a 5 q-bit computational basis state
 - Random outcomes are achieved through a single hadamard gate on each q-bit
 
-q_0 —| H | —  
-q_1 —| H | —  
-q_2 —| H | —  
-q_3 —| H | —  
-q_4 —| H | —  
+![hack_pt1](https://github.com/KarimAED/2022_microsoft_ionq_challenge/blob/main/QuHackJack_pictures/hack_pt1.png?raw=true)
 
 - Different gamemodes allow player to apply different types & numbers of gates
 
@@ -72,3 +69,8 @@ WATERGATE
 
 - Different Backends (Including __REAL__ IonQ QPU)
 
+<p align="left">
+  <a href="https://azure.microsoft.com/en-us/solutions/quantum-computing/" target="_blank"><img src="https://user-images.githubusercontent.com/10100490/151488491-609828a4-cd1f-4076-b5b2-a8d9fc2d0fa4.png" width="30%"/> </a>
+  <a href="https://ionq.com/" target="_blank"><img src="https://user-images.githubusercontent.com/10100490/151488159-da95eb05-9277-4abe-b1ba-b49871d563ed.svg" width="20%" style="padding: 1%;padding-left: 5%"/></a>
+  <a href="https://iquhack.mit.edu/" target="_blank"><img src="https://user-images.githubusercontent.com/10100490/151647370-d161d5b5-119c-4db9-898e-cfb1745a8310.png" width="8%" style="padding-left: 5%"/> </a>
+</p>
