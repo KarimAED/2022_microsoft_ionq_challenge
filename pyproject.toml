@@ -7,7 +7,6 @@ authors = ["KarimAED <karim.alaael-din@gmx.de>"]
 [tool.poetry.dependencies]
 python = "^3.8"
 qiskit = "^0.34.1"
-qiskit-ionq = "^0.1.4"
 azure-quantum = "^0.22.187631"
 ipython = "^8.0.1"
 
