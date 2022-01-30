@@ -105,3 +105,31 @@ Microsoft Quantum etc. can help, or you can just use our built-in sim command to
 different circuits affect the probability of different cards.
 
 """
+
+intro = \
+"""
+
+Welcome to QuHackJack!
+
+You can either start a game by typing PLAY, or set the game mode by typing the keywords EASY, MEDIUM, HARD, ULTRA,
+NOGATENOCRY and WATERGATE. Optimizing the circuit to draw the favorable card gets harder with each difficulty level.
+Here is the number and the list of allowed gates with their keywords for each difficulty level.
+
+EASY:             20    ["h", "x", "y", "z", "s", "t", "sx", "sdg", "tdg", "rx", "ry", "rz"]
+MEDIUM:        10    ["x", "y", "z", "s", "t", "sx", "sdg", "tdg", "rx", "ry", "rz"]
+HARD:         10    ["x", "y", "z", "s", "t", "sx", "sdg", "tdg", "rx", "rz"]
+ULTRA:        10    ["x", "y", "z", "s", "t", "sx", "sdg", "tdg"]
+NOGATENOCRY:      4    ["h", "x", "y", "z", "s", "t", "sx", "sdg", "tdg", "rx", "ry", "rz"]
+WATERGATE:      6    ["x", "y", "z", "s", "t", "sx", "sdg", "tdg", "rx", "rz"]
+
+Keywords for using the available backends to run the game: 
+AER : Aer Qasm Simulator
+IONQ_SIM : Ionq simulator
+QPU : Ionq QPU
+
+You can check your odds of winning by running the game on simulators and then execute on the real hardware.
+Note that results on the real hardware are subject to noise and long queues. It's the NISQ era!
+
+To learn more about QuHackJack, type INFO. If you are stuck, type HELP. Alternatively, type QUIT to leave the game.
+
+"""

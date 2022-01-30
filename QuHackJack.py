@@ -6,7 +6,6 @@ from azure.quantum.qiskit import AzureQuantumProvider
 
 import strings
 from ascii_card_reader import join_cards
-from strings import *
 
 provider = AzureQuantumProvider(
   resource_id="/subscriptions/b1d7f7f8-743f-458e-b3a0-3e09734d716d/resourceGroups/aq-hackathons/providers/Microsoft.Quantum/Workspaces/aq-hackathon-01",
@@ -49,14 +48,6 @@ cl_screen = lambda: print("\n"*100)
 
 class Game:
 
-  intro = \
-  """
-Welcome to QuHackJack!
-
-You can either start a game by typing PLAY, or set the game mode by typing EASY, MEDIUM, HARD, ULTRA or NOGATENOCRY.
-To learn more about QuHackJack, type INFO. If you are stuck, type HELP. Alternatively, type QUIT to leave the game.
-  """
-
   options_text = "The following options are available to you: "
 
   responses = ("PLAY", "EASY", "MEDIUM", "HARD", "HELP", "AER", "IONQ_SIM", "QPU",
@@ -88,7 +79,7 @@ To learn more about QuHackJack, type INFO. If you are stuck, type HELP. Alternat
 
     while not self.quit:
       cl_screen()
-      print(self.intro)
+      print(strings.intro)
       print("Game mode is %s." % self.difficulty)
       print("Backend is %s." % self.backend)
       resp = input("What do you want to do? ").upper()
