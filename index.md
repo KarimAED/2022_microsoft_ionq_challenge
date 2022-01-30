@@ -23,3 +23,10 @@ But that's gambling, we can't allow that...
 - Counting cards makes it a game of skill
 - But it's hard and requires thinking
 
+__Introducing: QuHackJack__
+
+### Game Concept
+
+- Use quantum computer to generate all random numbers
+- Random numbers correspond to playing cards
+- Allow the user to manipulate the quantum circuit before drawing a card, to change their odds
