@@ -90,8 +90,6 @@ If you immediately use "sim", you will see a probability distribution that is al
 
 But if you apply some gates, e.g. rotations around Y axis, things start to change. In order to add one gate you have to specify the name of the gate and then the qubit index. If the gate is a rotation then also the angle (in 𝜋 radians) is required.
 
-![hack_pt2](https://github.com/KarimAED/2022_microsoft_ionq_challenge/blob/main/QuHackJack_pictures/hack_pt2.png?raw=true)
-
 ![hack_pt3](https://github.com/KarimAED/2022_microsoft_ionq_challenge/blob/main/QuHackJack_pictures/hack_pt3.png?raw=true)
 
 ![hack_pt4](https://github.com/KarimAED/2022_microsoft_ionq_challenge/blob/main/QuHackJack_pictures/hack_pt4.png?raw=true)
