@@ -1,4 +1,4 @@
-import math
+import math, time
 from qiskit import QuantumCircuit, execute, Aer
 from qiskit.tools.monitor import job_monitor
 from qiskit.circuit import Instruction, Qubit, QuantumRegister
@@ -78,6 +78,7 @@ To learn more about QuHackJack, type INFO. If you are stuck, type HELP. Alternat
     self.quit = False
     self.player_cards = []
     self.dealer_cards = []
+    self.initial_stack = []
     self.circuit = self.make_random_generator()
     self.difficulty = "EASY"
     self.diff_setting = easy
@@ -158,7 +159,7 @@ To learn more about QuHackJack, type INFO. If you are stuck, type HELP. Alternat
       
       return card_value, card_suit
 
-  def draw_random(self):
+  def draw(self):
       
       qc = self.circuit
       
@@ -176,6 +177,24 @@ To learn more about QuHackJack, type INFO. If you are stuck, type HELP. Alternat
       
       return card_value, card_suit
 
+
+  def initial_draws(self):
+
+    self.initial_stack = []
+
+    qc = self.circuit
+
+    qc.measure_all()
+
+    job = execute(qc, self.backend_setting, shots=10)
+
+    job_monitor(job)
+
+    count = job.result().get_counts()
+
+    for key, val in count.items():
+      for i in range(val):
+        self.initial_stack.append(self.read_outcome("".join(key.split(" "))))
 
   def simulate_circuit(self):
 
@@ -198,6 +217,7 @@ To learn more about QuHackJack, type INFO. If you are stuck, type HELP. Alternat
 
   def show_sim(self):
     cl_screen()
+    print("Simulating...")
     data = self.simulate_circuit()
 
     for key, val in sorted(data.items()):
@@ -213,14 +233,14 @@ To learn more about QuHackJack, type INFO. If you are stuck, type HELP. Alternat
 
 
   def player_turn(self):
-    self.player_cards.append(self.draw_random())
+    self.player_cards.append(self.draw())
     player_score = self.check_score(self.player_cards)
 
     return player_score
   
 
   def dealer_turn(self):
-    self.dealer_cards.append(self.draw_random())
+    self.dealer_cards.append(self.initial_stack.pop())
     dealer_score = self.check_score(self.dealer_cards)
     return dealer_score
 
@@ -272,14 +292,14 @@ To learn more about QuHackJack, type INFO. If you are stuck, type HELP. Alternat
 
   def play(self):
     self.num_gates = self.diff_setting["number_gates"]
-    self.circuit = self.make_random_generator()
+    self.initial_draws()
     self.player_cards = []
     self.dealer_cards = []
     keep_playing = True
 
     print("Let's start this game!")
-    self.player_score = self.player_turn()
-    self.circuit = self.make_random_generator()
+    self.player_cards.append(self.initial_stack.pop())
+    self.player_score = self.check_score(self.player_cards)
     self.dealer_score = self.dealer_turn()
 
     while keep_playing:
@@ -296,7 +316,8 @@ To learn more about QuHackJack, type INFO. If you are stuck, type HELP. Alternat
           return
     
     while (self.dealer_score < 12 or self.dealer_score < self.player_score) and self.dealer_score != 0:
-      self.circuit = self.make_random_generator()
+      print("Dealer is drawing...")
+      time.sleep(3)
       self.dealer_score = self.dealer_turn()
       self.show_state()
 
