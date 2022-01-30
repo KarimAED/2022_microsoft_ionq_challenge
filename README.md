@@ -94,6 +94,8 @@ But if you apply some gates, e.g. rotations around Y axis, things start to chang
 
 ![hack_pt4](https://github.com/KarimAED/2022_microsoft_ionq_challenge/blob/main/QuHackJack_pictures/hack_pt4.png?raw=true)
 
+You can always check your probability distribution again with "sim":
+
 ![hacked_distrib](https://github.com/KarimAED/2022_microsoft_ionq_challenge/blob/main/QuHackJack_pictures/hacked_distrib.png?raw=true)
 
 When you are satisfied with the obtained probability distribution, you can run the circuit to draw your card.
