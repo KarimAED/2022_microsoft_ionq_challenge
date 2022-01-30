@@ -63,6 +63,28 @@ While editing the circuit for their next card, the player can also simulate the 
 
 ## Game Guide
 
+As the program is launched, you will be redirected to the Microsoft Azure login page. Once you log in, a welcome message is printed. Then, you can choose a game mode by typing the suggested string and the desired backend. Both lower and upper case strings work. Both INFO and HELP commands are available for further information.
+
+Once you type PLAY, a first random card is drawn for both you and the dealer.
+
+Soon after (timing is backend dependent), the cards are shown, and the game asks you if you want another card.
+
+If you do, you can type “Y” and have the chance to apply gates and modify the probability distribution. A reminder of your current total is printed and then the present quantum circuit is shown. The available gates as well as the number of operations that you can apply is also presented.
+
+At this stage, you can choose to apply a gate operation, to simulate the present probability distribution or to run the circuit. If you are stuck here, you can type help on the main screen and receive a message that will help you to understand the logic of the game.
+
+If you immediately use “sim”, you will see a probability distribution that is almost perfectly flat.
+
+But if you apply some gates, e.g. rotations around Y axis, things start to change. In order to add one gate you have to specify the name of the gate and then the qubit index. If the gate is a rotation then also the angle (in 𝜋 radians) is required.
+
+
+When you are satisfied with the obtained probability distribution, you can run the circuit to draw your card.
+
+Then you can try to hack another card or leave the dealer to finish the game.
+
+After the game is finished, you are returned back to the main menu.
+
+
 ## The QuHackJack team:
 
 [Karim Alaa El-Din ](https://www.linkedin.com/in/karimaed/)  
