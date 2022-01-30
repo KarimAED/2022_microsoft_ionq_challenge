@@ -47,5 +47,12 @@ WATERGATE: 	6	["x", "y", "z", "s", "t", "sx", "sdg", "tdg", "rx", "rz"]
 While editing the circuit for their next card, the player can also simulate the expected cards (on a Qiskit Aer backend for speed), to learn how different gates impact the state and the probability of different cards. Then, once you are ready, you can submit your circuit, get your card, and beat that dealer all the time.
 
 
-# Our team:
+# The QuHackJack team:
+
 [Karim Alaa El-Din ](https://www.linkedin.com/in/karimaed/)  
+
+[Francesco Scala](https://www.linkedin.com/in/francesco-scala-839507211/)  
+
+[Francesco Scala](https://www.linkedin.com/in/francesco-scala-839507211/)  
+
+[Arunava Majumder](https://www.linkedin.com/in/arunava-majumder-33500a167/)  
