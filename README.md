@@ -65,6 +65,9 @@ While editing the circuit for their next card, the player can also simulate the 
 
 As the program is launched, you will be redirected to the Microsoft Azure login page. Once you log in, a welcome message is printed. Then, you can choose a game mode by typing the suggested string and the desired backend. Both lower and upper case strings work. Both INFO and HELP commands are available for further information.
 
+![initial_message](https://github.com/KarimAED/2022_microsoft_ionq_challenge/blob/main/QuHackJack_pictures/initial_message.png?raw=true)
+
+
 Once you type PLAY, a first random card is drawn for both you and the dealer.
 
 Soon after (timing is backend dependent), the cards are shown, and the game asks you if you want another card.
