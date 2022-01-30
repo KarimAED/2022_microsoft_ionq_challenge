@@ -1,4 +1,5 @@
 # QuHackJack Casinos™
+This is our submission with which we achieved 2nd place in the MIT iQuHack 2022 Microsoft IonQ Division.
 <p>
   <a href="" target="_blank"><img src="https://user-images.githubusercontent.com/46804607/151706840-778c7238-9dac-4062-a6ab-a909ae9606c4.png" width="60%"/> </a>
 </p>
