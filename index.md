@@ -28,5 +28,30 @@ __Introducing: QuHackJack__
 ### Game Concept
 
 - Use quantum computer to generate all random numbers
-- Random numbers correspond to playing cards
+- Random numbers correspond to playing cards being drawn
 - Allow the user to manipulate the quantum circuit before drawing a card, to change their odds
+
+### Rules
+
+- deck of 32 cards, values 3 to 10 and suits ♣, ♠, ♥, ♦
+- The player and dealer compete to reach as close as possible to a total of 16, without going over
+- Each card corresponds to a 5 q-bit computational basis state
+- Random outcomes are achieved through a single hadamard gate on each q-bit
+
+q_0 —| H | —  
+q_1 —| H | —  
+q_2 —| H | —  
+q_3 —| H | —  
+q_4 —| H | —  
+
+- Different gamemodes allow player to apply different types & numbers of gates
+
+__Gamemodes:__
+
+EASY
+MEDIUM
+HARD
+ULTRA
+NOGATENOCRY
+WATERGATE
+
