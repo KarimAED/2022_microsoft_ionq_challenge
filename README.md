@@ -26,10 +26,15 @@ Now the Quantum Fun begins. It turns out that this casino uses a quantum compute
 By default, the quantum computer is always in the completely random superposition of all possible outcomes, making them all equally likely, as in a normal card game. This is achieved through 5 initial Hadamard gates. The player then gets to modify the circuit, and depending on the game mode, he has different kinds and numbers of gates available:
 
 EASY: 			20	["h", "x", "y", "z", "s", "t", "sx", "sdg", "tdg", "rx", "ry", "rz"]
+
 MEDIUM:		10	["x", "y", "z", "s", "t", "sx", "sdg", "tdg", "rx", "ry", "rz"]
+
 HARD: 		10	["x", "y", "z", "s", "t", "sx", "sdg", "tdg", "rx", "rz"]
+
 ULTRA:		10	["x", "y", "z", "s", "t", "sx", "sdg", "tdg"]
+
 NOGATENOCRY: 	4	["h", "x", "y", "z", "s", "t", "sx", "sdg", "tdg", "rx", "ry", "rz"]
+
 WATERGATE: 	6	["x", "y", "z", "s", "t", "sx", "sdg", "tdg", "rx", "rz"]
 
 While editing the circuit for their next card, the player can also simulate the expected cards (on a Qiskit Aer backend for speed), to learn how different gates impact the state and the probability of different cards. Then, once you are ready, you can submit your circuit, get your card, and beat that dealer all the time.
