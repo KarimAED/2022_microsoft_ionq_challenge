@@ -10,3 +10,16 @@ Cheating with Quantum Computers since 2022
 [Rabins Wosti](https://www.linkedin.com/in/rabins-wosti-703107152/)  
 
 [Arunava Majumder](https://www.linkedin.com/in/arunava-majumder-33500a167/)  
+
+
+### Introduction
+
+- BlackJack is a game of chance where the player tries to reach a sum of 21 with his card values, without going over
+- The player is opposed by a dealer, who plays by the same rules
+- Whoever gets closer to 21 wins
+
+But that's gambling, we can't allow that...
+
+- Counting cards makes it a game of skill
+- But it's hard and requires thinking
+
