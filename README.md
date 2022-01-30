@@ -1,4 +1,4 @@
-# Welcome to the IONQ + MicrosoftQ challenge!
+# Welcome to the quantum gaming world!
 
 <p align="left">
   <a href="https://azure.microsoft.com/en-us/solutions/quantum-computing/" target="_blank"><img src="https://user-images.githubusercontent.com/10100490/151488491-609828a4-cd1f-4076-b5b2-a8d9fc2d0fa4.png" width="30%"/> </a>
