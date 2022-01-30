@@ -75,3 +75,10 @@ WATERGATE
   <a href="https://azure.microsoft.com/en-us/solutions/quantum-computing/" target="_blank"><img src="https://user-images.githubusercontent.com/10100490/151488491-609828a4-cd1f-4076-b5b2-a8d9fc2d0fa4.png" width="30%"/> </a>
   <a href="https://ionq.com/" target="_blank"><img src="https://user-images.githubusercontent.com/10100490/151488159-da95eb05-9277-4abe-b1ba-b49871d563ed.svg" width="20%" style="padding: 1%;padding-left: 5%"/></a>
 </p>
+
+### Thoughts & Results
+
+- Useful as a teaching device
+- Extensive documentation of quantum computing concepts & independent exploration of different gates
+- Very fun puzzle game (We have spent some time puzzling ourselves)
+- Replay value through 1st card randomness & different (_hard_) gamemodes
