@@ -63,27 +63,48 @@ While editing the circuit for their next card, the player can also simulate the 
 
 ## Game Guide
 
-As the program is launched, you will be redirected to the Microsoft Azure login page. Once you log in, a welcome message is printed. Then, you can choose a game mode by typing the suggested string and the desired backend. Both lower and upper case strings work. Both INFO and HELP commands are available for further information.
+As the program is launched, you will be redirected to the Microsoft Azure login page. Once you log in, a welcome message is printed. Then, you can choose a game mode by typing the suggested string and the desired backend. Both lower and upper case strings work. Both "INFO" and "HELP" commands are available for further information.
 
 ![initial_message](https://github.com/KarimAED/2022_microsoft_ionq_challenge/blob/main/QuHackJack_pictures/initial_message.png?raw=true)
 
 
-Once you type PLAY, a first random card is drawn for both you and the dealer.
+Once you type "PLAY", a first random card is drawn for both you and the dealer.
+
+![play](https://github.com/KarimAED/2022_microsoft_ionq_challenge/blob/main/QuHackJack_pictures/play.png?raw=true)
 
 Soon after (timing is backend dependent), the cards are shown, and the game asks you if you want another card.
 
-If you do, you can type “Y” and have the chance to apply gates and modify the probability distribution. A reminder of your current total is printed and then the present quantum circuit is shown. The available gates as well as the number of operations that you can apply is also presented.
+![first_draw](https://github.com/KarimAED/2022_microsoft_ionq_challenge/blob/main/QuHackJack_pictures/first_draw.png?raw=true)
+
+If you do, you can type "Y" and have the chance to apply gates and modify the probability distribution. A reminder of your current total is printed and then the present quantum circuit is shown. The available gates as well as the number of operations that you can apply is also presented.
+
+![hack_pt1](https://github.com/KarimAED/2022_microsoft_ionq_challenge/blob/main/QuHackJack_pictures/hack_pt1.png?raw=true)
 
 At this stage, you can choose to apply a gate operation, to simulate the present probability distribution or to run the circuit. If you are stuck here, you can type help on the main screen and receive a message that will help you to understand the logic of the game.
 
-If you immediately use “sim”, you will see a probability distribution that is almost perfectly flat.
+![help](https://github.com/KarimAED/2022_microsoft_ionq_challenge/blob/main/QuHackJack_pictures/help.png?raw=true)
+
+If you immediately use "sim", you will see a probability distribution that is almost perfectly flat.
+
+![flat_distrib](https://github.com/KarimAED/2022_microsoft_ionq_challenge/blob/main/QuHackJack_pictures/flat_distrib.png?raw=true)
 
 But if you apply some gates, e.g. rotations around Y axis, things start to change. In order to add one gate you have to specify the name of the gate and then the qubit index. If the gate is a rotation then also the angle (in 𝜋 radians) is required.
 
+![hack_pt2](https://github.com/KarimAED/2022_microsoft_ionq_challenge/blob/main/QuHackJack_pictures/hack_pt2.png?raw=true)
+
+![hack_pt3](https://github.com/KarimAED/2022_microsoft_ionq_challenge/blob/main/QuHackJack_pictures/hack_pt3.png?raw=true)
+
+![hack_pt4](https://github.com/KarimAED/2022_microsoft_ionq_challenge/blob/main/QuHackJack_pictures/hack_pt4.png?raw=true)
+
+![hacked_distrib](https://github.com/KarimAED/2022_microsoft_ionq_challenge/blob/main/QuHackJack_pictures/hacked_distrib.png?raw=true)
 
 When you are satisfied with the obtained probability distribution, you can run the circuit to draw your card.
 
+![2nd_draw](https://github.com/KarimAED/2022_microsoft_ionq_challenge/blob/main/QuHackJack_pictures/2nd_draw.png?raw=true)
+
 Then you can try to hack another card or leave the dealer to finish the game.
+
+![dealer_final_move](https://github.com/KarimAED/2022_microsoft_ionq_challenge/blob/main/QuHackJack_pictures/dealer_final_move.png?raw=true)
 
 After the game is finished, you are returned back to the main menu.
 
