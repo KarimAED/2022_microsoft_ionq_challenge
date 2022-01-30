@@ -1,4 +1,4 @@
-# Welcome to the quantum gaming world of QuHackJack!
+# Welcome to the QuHackJack Casinos™!
 
 <p align="left">
   <a href="https://azure.microsoft.com/en-us/solutions/quantum-computing/" target="_blank"><img src="https://user-images.githubusercontent.com/10100490/151488491-609828a4-cd1f-4076-b5b2-a8d9fc2d0fa4.png" width="30%"/> </a>
@@ -7,7 +7,7 @@
   <a href="" target="_blank"><img src="https://user-images.githubusercontent.com/46804607/151706840-778c7238-9dac-4062-a6ab-a909ae9606c4.png" width="60%"/> </a>
 </p>
 
-# INTRODUCTION
+## INTRODUCTION
 
 Welcome! Not quite sure where to start? Never even heard of quantum computing? No problem, we are always glad to help here at QuHackJack Casinos™.
 
@@ -16,9 +16,24 @@ We are a bunch of geeks who are taking the initiative to teach quantum operation
 
 This is where you can experience the weird world of quantum superposition at play! You can use the quantum tricks provided to you in the form of allowed gates at each level to rig the roulette to your advantage. Alright, with this superpower, come and use the quantum to bag yourself a huge amount! 
 
+## Installation & Execution (The boring part)
+
+To run the game, first clone this repository. Then make sure that the following requirements are installed:
+
+qiskit  
+azure-quantum
+
+From pip version 10.0, you can install these directly from the pyproject.toml, or alternatively a package manager like poetry can be used.
+
+Credentials for the aq-hackathon-01 resource group are required from the user, even though another resource group can be selected by manually editing the global provider in the QuHackJack.py file.
+
+For a simulated backend, we strongly recommend the local Aer simulator over the hosted Ionq simulator, as there is no queue time. The IONQ_SIM and QPU backends can have long queue times for individual moves. We definitely recommend trying out the QPU backend for the feeling of ruling the world, and playing QuHackJack on god’s own legos.
+
+Once the installation is complete, simply run QuHackJack.py to start the game. Enjoy!
 
 
-# Rules of the game:
+
+## Game Basics
 
 QuHackJack is a BlackJack inspired card game in which the player has to use the laws of quantum mechanics to win. The game itself seems simple: you draw cards, and try to get the sum of their values, e.g. 7 for a 3 and a 4, as close as possible to 16, without exceeding it. The house plays too, in the form of a dealer that draws cards against you.
 
@@ -46,8 +61,9 @@ WATERGATE: 	6	["x", "y", "z", "s", "t", "sx", "sdg", "tdg", "rx", "rz"]
 
 While editing the circuit for their next card, the player can also simulate the expected cards (on a Qiskit Aer backend for speed), to learn how different gates impact the state and the probability of different cards. Then, once you are ready, you can submit your circuit, get your card, and beat that dealer all the time.
 
+## Game Guide
 
-# The QuHackJack team:
+## The QuHackJack team:
 
 [Karim Alaa El-Din ](https://www.linkedin.com/in/karimaed/)  
 
