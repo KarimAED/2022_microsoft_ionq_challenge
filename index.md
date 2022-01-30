@@ -54,6 +54,8 @@ ULTRA
 NOGATENOCRY  
 WATERGATE  
 
+Some have no element of luck, others have some! All require a good amount of puzzling.
+
 ### Featuring
 
 - Newest Ascii Graphics
@@ -76,9 +78,30 @@ WATERGATE
   <a href="https://ionq.com/" target="_blank"><img src="https://user-images.githubusercontent.com/10100490/151488159-da95eb05-9277-4abe-b1ba-b49871d563ed.svg" width="20%" style="padding: 1%;padding-left: 5%"/></a>
 </p>
 
-### Thoughts & Results
+- Comprehensive UI messages and tons of introduction
 
-- Useful as a teaching device
+![help](https://github.com/KarimAED/2022_microsoft_ionq_challenge/blob/main/QuHackJack_pictures/help.png?raw=true)
+
+### Achievements
+
+- Created a fully-fletched, _fun_ game
+- Useful as a teaching device (tried and tested on friends & family)
 - Extensive documentation of quantum computing concepts & independent exploration of different gates
 - Very fun puzzle game (We have spent some time puzzling ourselves)
-- Replay value through 1st card randomness & different (_hard_) gamemodes
+- Tons of variety through random 1st cards & different gamemodes
+
+### Potential improvements
+
+- Limited to a non-standard deck by the use of q-bit basis
+- Hardware noise may mess with the user, even if all the gates are correct (_It's NISQ, Baby!_)
+- Queued jobs make the game quite slow
+- The victory, loss messages could use some work
+
+### Thoughts & Reflections
+
+- Incredible Experience throughout
+- Extremely creative & fun challenge (Thanks @Microsoft & @IonQ)
+- Met people from all across the world (4 people, 4 timezones & countries)
+
+
+## Thank you!
