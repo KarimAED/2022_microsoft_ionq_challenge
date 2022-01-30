@@ -18,7 +18,7 @@ This is where you can experience the weird world of quantum superposition at pla
 
 
 
-# Game Basics:
+# Game Basics
 
 QuHackJack is a BlackJack inspired card game in which the player has to use the laws of quantum mechanics to win. The game itself seems simple: you draw cards, and try to get the sum of their values, e.g. 7 for a 3 and a 4, as close as possible to 16, without exceeding it. The house plays too, in the form of a dealer that draws cards against you.
 
@@ -57,3 +57,4 @@ From pip version 10.0, you can install these directly from the pyproject.toml, o
 
 Once the installation is complete, simply run QuHackJack.py to start the game. Enjoy!
 
+# Game Guide
