@@ -37,9 +37,13 @@ q_4	|1>
 Now, the initial circuit looks like
 
 q_0 —| H | —
+
 q_1 —| H | —
+
 q_2 —| H | —
+
 q_3 —| H | —
+
 q_4 —| H | —
 
 In the easy game mode, you can use the Hadamard (h) gate to return these states to the |0> state, and then you can always use a Pauli-X (x) gate to turn a |0> into a |1>. In our example, we then want to apply the gates as follows:
