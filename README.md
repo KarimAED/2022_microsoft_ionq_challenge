@@ -9,7 +9,7 @@
 
 Welcome! Not quite sure where to start? Never even heard of quantum computing? No problem, we are always glad to help here at QuHackJack Casinos™.
 
-We are a bunch of geeks who are taking the initiative to teach quantum operations for fun. Here you will learn how to implement quantum gates not through the usual but through a fun game using our game names QHackJack.
+We are a bunch of geeks who are taking the initiative to teach quantum operations for fun. Here you will learn how to implement quantum gates not through the usual but through a fun game using our game names QuHackJack.
 
 This is where you can experience the weird world of quantum superposition at play! You can use the quantum tricks provided to you in the form of allowed gates at each level to rig the roulette to your advantage. Alright, with this superpower, come and use the quantum to bag yourself a huge amount! 
 
