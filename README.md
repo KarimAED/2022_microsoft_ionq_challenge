@@ -69,6 +69,6 @@ While editing the circuit for their next card, the player can also simulate the 
 
 [Francesco Scala](https://www.linkedin.com/in/francesco-scala-839507211/)  
 
-[Francesco Scala](https://www.linkedin.com/in/francesco-scala-839507211/)  
+[Rabins Wosti](https://www.linkedin.com/in/rabins-wosti-703107152/)  
 
 [Arunava Majumder](https://www.linkedin.com/in/arunava-majumder-33500a167/)  
