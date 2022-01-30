@@ -7,6 +7,8 @@
   <a href="" target="_blank"><img src="https://user-images.githubusercontent.com/46804607/151706840-778c7238-9dac-4062-a6ab-a909ae9606c4.png" width="60%"/> </a>
 </p>
 
+# INTRODUCTION
+
 Welcome! Not quite sure where to start? Never even heard of quantum computing? No problem, we are always glad to help here at QuHackJack Casinos™.
 
 We are a bunch of geeks who are taking the initiative to teach quantum operations for fun. Here you will learn how to implement quantum gates not through the usual but through a fun game using our game names QuHackJack.
@@ -16,7 +18,7 @@ This is where you can experience the weird world of quantum superposition at pla
 
 
 
-# INTRODUCTION
+# Rules of the game:
 
 QuHackJack is a BlackJack inspired card game in which the player has to use the laws of quantum mechanics to win. The game itself seems simple: you draw cards, and try to get the sum of their values, e.g. 7 for a 3 and a 4, as close as possible to 16, without exceeding it. The house plays too, in the form of a dealer that draws cards against you.
 
