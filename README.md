@@ -108,6 +108,9 @@ Then you can try to hack another card or leave the dealer to finish the game.
 
 After the game is finished, you are returned back to the main menu.
 
+## Our Personal Experience
+
+Firstly, we were all very excited to have been accepted for participation in MIT iQuHACK 2022. It has been a fast-paced, but great learning experience in the last two days. We were expecting the challenges to be more specific for both divisions, however we were pleasantly surprised with the freedom the organizers gave us in designing our own project by having minimal requirements. That really got our creative juices flowing! All four of us in the team were from four different time zones, so this hackathon gave us an opportunity to collaborate with really talented people across the globe and have a great exchange of ideas. Additionally, it was great to see the passion each one of us had for designing a cool quantum game in almost a day. In a nutshell, participating in a quantum hackathon has been an awesome experience.
 
 ## The QuHackJack team:
 
