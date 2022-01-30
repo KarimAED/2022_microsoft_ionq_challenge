@@ -7,4 +7,8 @@
   
 </p>
 
+Welcome! Not quite sure where to start? Never even heard of quantum computing? No problem, we are always glad to help here at QuHackJack Casinos™.
+
+In QuHackJack, the random cards, ranging from 3 to 10 with the 4 classic suits, are generated from a quantum computer. Now, our quantum computer doesn’t know the cards by their numbers and suits, but instead by different states, each of them labeled by a different 5-bit string, such as 01110. Then, how do we map from these bit strings to the cards? It’s quite easy, actually.
+
 
