@@ -46,4 +46,14 @@ WATERGATE: 	6	["x", "y", "z", "s", "t", "sx", "sdg", "tdg", "rx", "rz"]
 
 While editing the circuit for their next card, the player can also simulate the expected cards (on a Qiskit Aer backend for speed), to learn how different gates impact the state and the probability of different cards. Then, once you are ready, you can submit your circuit, get your card, and beat that dealer all the time.
 
+# Running Instructions
+
+To run the game, first clone this repository. Then make sure that the following requirements are installed:
+
+qiskit  
+azure-quantum  
+
+From pip version 10.0, you can install these directly from the pyproject.toml, or alternatively a package manager like poetry can be used.
+
+Once the installation is complete, simply run QuHackJack.py to start the game. Enjoy!
 
