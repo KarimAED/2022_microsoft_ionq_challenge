@@ -48,10 +48,27 @@ q_4 —| H | —
 
 __Gamemodes:__
 
-EASY
-MEDIUM
-HARD
-ULTRA
-NOGATENOCRY
-WATERGATE
+EASY  
+MEDIUM  
+HARD  
+ULTRA  
+NOGATENOCRY  
+WATERGATE  
+
+### Featuring
+
+- Newest Ascii Graphics
+
+![first_draw](https://github.com/KarimAED/2022_microsoft_ionq_challenge/blob/main/QuHackJack_pictures/first_draw.png?raw=true)
+
+
+- Dynamic Circuit editing
+
+![hack_pt3](https://github.com/KarimAED/2022_microsoft_ionq_challenge/blob/main/QuHackJack_pictures/hack_pt3.png?raw=true)
+
+- Simulating probability of cards for each circuit
+
+![flat_distrib](https://github.com/KarimAED/2022_microsoft_ionq_challenge/blob/main/QuHackJack_pictures/flat_distrib.png?raw=true)
+
+- Different Backends (Including __REAL__ IonQ QPU)
 
