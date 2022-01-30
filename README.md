@@ -51,9 +51,13 @@ q_4 —| H | —
 In the easy game mode, you can use the Hadamard (h) gate to return these states to the |0> state, and then you can always use a Pauli-X (x) gate to turn a |0> into a |1>. In our example, we then want to apply the gates as follows:
 
 q_0 —| H | —
+
 q_1 —| H | —
+
 q_2 —| H | ——| H | —
+
 q_3 —| H | ——| H | —
+
 q_4 —| H | ——| H | ——| X | —
 
 Now, you are ready to get going in the easy mode, just follow these simple steps. For the other modes, try to look for other combinations that can get you the h gate. Online sources like Qiskit, QuantumInspire, IBMQ, Microsoft Quantum etc. can help, or you can just use our built-in sim command to see how different circuits affect the probability of different cards.
