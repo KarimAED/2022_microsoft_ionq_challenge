@@ -108,8 +108,9 @@ different circuits affect the probability of different cards.
 
 intro = \
 """
-
+****************************************************************************************************
 Welcome to QuHackJack!
+****************************************************************************************************
 
 You can either start a game by typing PLAY, or set the game mode by typing the keywords EASY, MEDIUM, HARD, ULTRA,
 NOGATENOCRY and WATERGATE. Optimizing the circuit to draw the favorable card gets harder with each difficulty level.
@@ -124,8 +125,8 @@ WATERGATE:      6    ["x", "y", "z", "s", "t", "sx", "sdg", "tdg", "rx", "rz"]
 
 Keywords for using the available backends to run the game: 
 AER : Aer Qasm Simulator
-IONQ_SIM : Ionq simulator
-QPU : Ionq QPU
+IONQ_SIM : Ionq simulator (deactivated, requires valid credentials)
+QPU : Ionq QPU (deactivated, requires valid credentials)
 
 You can check your odds of winning by running the game on simulators and then execute on the real hardware.
 Note that results on the real hardware are subject to noise and long queues. It's the NISQ era!
