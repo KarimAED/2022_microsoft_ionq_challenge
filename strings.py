@@ -1,5 +1,4 @@
-info = \
-"""
+info = """
 Welcome to the QuHackJack!
 
 This is where you can experience the weird world of quantum superposition at play!
@@ -44,8 +43,7 @@ backend for speed), to learn how different gates impact the state and the probab
 Then, once you are ready, you can submit your circuit, get your card, and beat that dealer all the time.
 """
 
-help_str = \
-"""
+help_str = """
 Not quite sure where to start? Never even heard of quantum computing?
 No problem, we are always glad to help here at QuHackJack Casinos™.
 
@@ -106,8 +104,7 @@ different circuits affect the probability of different cards.
 
 """
 
-intro = \
-"""
+intro = """
 ****************************************************************************************************
 Welcome to QuHackJack!
 ****************************************************************************************************

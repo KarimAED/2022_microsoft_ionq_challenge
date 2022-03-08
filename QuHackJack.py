@@ -9,46 +9,88 @@ from ascii_card_reader import join_cards
 
 provider = AzureQuantumProvider(
     resource_id="/subscriptions/b1d7f7f8-743f-458e-b3a0-3e09734d716d/resourceGroups/aq-hackathons/providers/Microsoft.Quantum/Workspaces/aq-hackathon-01",
-    location="eastus"
+    location="eastus",
 )
 
 use_qpu = False
 
 easy = {
-    "allowed_gates": ["i", "h", "x", "y", "z", "s", "t", "sx", "sdg", "tdg", "rx", "ry", "rz"],
-    "number_gates": 20
+    "allowed_gates": [
+        "i",
+        "h",
+        "x",
+        "y",
+        "z",
+        "s",
+        "t",
+        "sx",
+        "sdg",
+        "tdg",
+        "rx",
+        "ry",
+        "rz",
+    ],
+    "number_gates": 20,
 }
 
 no_gate_no_cry = {
-    "allowed_gates": ["i", "h", "x", "y", "z", "s", "t", "sx", "sdg", "tdg", "rx", "ry", "rz"],
-    "number_gates": 4
+    "allowed_gates": [
+        "i",
+        "h",
+        "x",
+        "y",
+        "z",
+        "s",
+        "t",
+        "sx",
+        "sdg",
+        "tdg",
+        "rx",
+        "ry",
+        "rz",
+    ],
+    "number_gates": 4,
 }
 
 watergate = {
     "allowed_gates": ["i", "x", "y", "z", "s", "t", "sx", "sdg", "tdg", "rx", "rz"],
-    "number_gates": 6
+    "number_gates": 6,
 }
 
 medium = {
-    "allowed_gates": ["i", "x", "y", "z", "s", "t", "sx", "sdg", "tdg", "rx", "ry", "rz"],
-    "number_gates": 10
+    "allowed_gates": [
+        "i",
+        "x",
+        "y",
+        "z",
+        "s",
+        "t",
+        "sx",
+        "sdg",
+        "tdg",
+        "rx",
+        "ry",
+        "rz",
+    ],
+    "number_gates": 10,
 }
 
 hard = {
     "allowed_gates": ["i", "x", "y", "z", "s", "t", "sx", "sdg", "tdg", "rx", "rz"],
-    "number_gates": 10
+    "number_gates": 10,
 }
 
 ultra = {
     "allowed_gates": ["i", "x", "y", "z", "s", "t", "sx", "sdg", "tdg"],
-    "number_gates": 10
+    "number_gates": 10,
 }
 
-cl_screen = lambda: print("\n" * 100)
+
+def cl_screen():
+    print("\n" * 100)
 
 
 class QuantumDeck:
-
     def __init__(self, backend):
         self.circuit = self.make_random_generator()
         self.backend = backend
@@ -85,9 +127,13 @@ class QuantumDeck:
         self.circuit = self.make_random_generator()
 
     def add_gate(self, gate, qubit, params):
-        self.circuit.data.append((Instruction(name=gate, num_qubits=1, num_clbits=0, params=params),
-                                  [Qubit(QuantumRegister(self.circuit.num_qubits, 'q'), qubit)],
-                                  []))
+        self.circuit.data.append(
+            (
+                Instruction(name=gate, num_qubits=1, num_clbits=0, params=params),
+                [Qubit(QuantumRegister(self.circuit.num_qubits, "q"), qubit)],
+                [],
+            )
+        )
 
     def draw(self):
 
@@ -154,11 +200,30 @@ class QuantumDeck:
 class Game:
     options_text = "The following options are available to you: "
 
-    responses = ("PLAY", "EASY", "MEDIUM", "HARD", "HELP", "AER", "IONQ_SIM", "QPU",
-                 "ULTRA", "NOGATENOCRY", "WATERGATE", "QUIT", "INFO")
+    responses = (
+        "PLAY",
+        "EASY",
+        "MEDIUM",
+        "HARD",
+        "HELP",
+        "AER",
+        "IONQ_SIM",
+        "QPU",
+        "ULTRA",
+        "NOGATENOCRY",
+        "WATERGATE",
+        "QUIT",
+        "INFO",
+    )
 
-    difficulty_settings = {"EASY": easy, "MEDIUM": medium, "HARD": hard,
-                           "ULTRA": ultra, "NOGATENOCRY": no_gate_no_cry, "WATERGATE": watergate}
+    difficulty_settings = {
+        "EASY": easy,
+        "MEDIUM": medium,
+        "HARD": hard,
+        "ULTRA": ultra,
+        "NOGATENOCRY": no_gate_no_cry,
+        "WATERGATE": watergate,
+    }
 
     threshold = 16
 
@@ -217,19 +282,21 @@ class Game:
 
     @staticmethod
     def win():
-        print("\n\n" + "#"*100)
+        print("\n\n" + "#" * 100)
         print("Congratulations, you beat the house against all odds!")
         print("#" * 100 + "\n\n")
 
     @staticmethod
     def tie():
-        print("\n\n" + "#"*100)
-        print("Odd, I don't remember a draw as an option... But there you have it: a tie.")
+        print("\n\n" + "#" * 100)
+        print(
+            "Odd, I don't remember a draw as an option... But there you have it: a tie."
+        )
         print("#" * 100 + "\n\n")
 
     @staticmethod
     def loose():
-        print("\n\n" + "#"*100)
+        print("\n\n" + "#" * 100)
         print("If you know your stats, you knew this was inevitable, really...")
         print("#" * 100 + "\n\n")
 
@@ -277,27 +344,39 @@ class Game:
         sep = " " * 40
         joint_player = join_cards(self.player_cards)
         joint_dealer = join_cards(self.dealer_cards)
-        print("*"*100)
+        print("*" * 100)
         print("QuHackJack Casinos presents: QuHackJack")
-        print("*"*100)
+        print("*" * 100)
         print("\nMaximum total: 16\n\n")
-        print("Your cards: " + sep + ((len(self.player_cards) - 1) * 16 + 4) * " " + "Dealer cards: ")
-        for i in range(len(joint_player)):
-            print(joint_player[i] + sep + joint_dealer[i])
-        print("Your total: %i" % self.player_score + sep
-              + ((len(self.player_cards) - 1) * 16 + 4) * " " + "Dealer total: %i" % self.dealer_score)
+        print(
+            "Your cards: "
+            + sep
+            + ((len(self.player_cards) - 1) * 16 + 4) * " "
+            + "Dealer cards: "
+        )
+        for i, j_play in enumerate(joint_player):
+            print(j_play + sep + joint_dealer[i])
+        print(
+            "Your total: %i" % self.player_score
+            + sep
+            + ((len(self.player_cards) - 1) * 16 + 4) * " "
+            + "Dealer total: %i" % self.dealer_score
+        )
 
     def gate_manipulation(self):
         add_gates = True
         while add_gates:
             cl_screen()
-            print("Here is the circuit for the Quantum Random Number Generator. Now it's time to hack this thing!")
+            print(
+                "Here is the circuit for the Quantum Random Number Generator. Now it's time to hack this thing!"
+            )
             print("Reminder: your total is %i." % self.player_score)
             print(self.deck)
             print("Available gates: %s" % str(self.diff_setting["allowed_gates"]))
             print("You have %i gates left for this turn." % self.num_gates)
             gate = input(
-                "Please enter desired gate (leave blank to run circuit or enter 'sim' to simulate probabilities): ")
+                "Please enter desired gate (leave blank to run circuit or enter 'sim' to simulate probabilities): "
+            )
             if gate == "":
                 add_gates = False
                 continue
@@ -317,7 +396,12 @@ class Game:
                 add_gates = False
             params = []
             if "r" in gate:
-                phase = float(input("Enter the rotation angle for %s rotation (in π radians): " % gate))
+                phase = float(
+                    input(
+                        "Enter the rotation angle for %s rotation (in π radians): "
+                        % gate
+                    )
+                )
                 params.append(phase * math.pi)
 
             self.deck.add_gate(gate, qubit, params)
@@ -346,7 +430,9 @@ class Game:
                 self.loose()
                 return
 
-        while (self.dealer_score < 12 or self.dealer_score < self.player_score) and self.dealer_score != 0:
+        while (
+            self.dealer_score < 12 or self.dealer_score < self.player_score
+        ) and self.dealer_score != 0:
             print("Dealer is drawing...")
             time.sleep(3)
             self.dealer_score = self.dealer_turn(stack)

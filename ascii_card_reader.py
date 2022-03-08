@@ -1,9 +1,8 @@
 def row_splitter(string, length):
-    return (string[0+i:length+i] for i in range(0, len(string), length))
+    return (string[0 + i : length + i] for i in range(0, len(string), length))
 
 
 def get_ascii_cards(fname):
-    rows = []
     with open(fname, "r") as file:
         rows = file.readlines()
 
@@ -23,8 +22,7 @@ CARDS = get_ascii_cards("ascii_cards.txt")
 
 
 def get_card(num, suite):
-    global CARDS, suites
-    card = CARDS[num-1].copy()
+    card = CARDS[num - 1].copy()
 
     card = [row.replace("X", suite) for row in card]
 
